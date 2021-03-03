@@ -1,7 +1,5 @@
 # xâu AB độ dài n
 
-
-
 def nhap():
     return int(input())
 
@@ -14,13 +12,12 @@ def xuat(xau):
 def sinh(xau):
     n = len(xau)
     j = n - 1
-    while(xau[j] == 1 and j > 0):
+    while(xau[j] == 1 and j >= 0):
+        xau[j] = 0
         j -= 1
+    if(j < 0):
+        return True
     xau[j] = 1
-    for i in range(j+1,n):
-        xau[i] = 0
-    if j == 0:
-        return  True
     return False
 
 def xu_ly(n):
