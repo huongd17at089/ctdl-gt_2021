@@ -21,13 +21,13 @@ def hv_ke_tiep(a):
             k -= 1
         # Đổi chỗ aj cho ak
         a[j] , a[k] = dao(a[j], a[k])
-        r = j + 1
-        s = n
-        # Lật ngược đoạn aj+1, …, an.
-        while r <= s:
-            a[r], a[s] = dao(a[r], a[s])
-            r += 1
-            s -= 1
+    r = j + 1
+    s = n
+    # Lật ngược đoạn aj+1, …, an.
+    while r <= s:
+        a[r], a[s] = dao(a[r], a[s])
+        r += 1
+        s -= 1
 
 
 
