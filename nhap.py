@@ -5,12 +5,16 @@
 # def xu_ly():
 #     pass
 #
+# def xuat():
+#     pass
+#
 # if __name__ == "__main__":
 #     t = int(input())
 #     kq = ""
 #     while(t > 0):
 #         nhap()
 #         xu_ly()
+#         xuat()
 #         t -= 1
 
 
@@ -19,3 +23,5 @@
 # print(l)
 #
 # def dao(a, b):
+
+# print(a[i], end =" ")
