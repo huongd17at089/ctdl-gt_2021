@@ -2,10 +2,10 @@
 # def nhap():
 #     pass
 #
-# def xu_ly():
+# def xuat():
 #     pass
 #
-# def xuat():
+# def xu_ly():
 #     pass
 #
 # if __name__ == "__main__":
@@ -25,3 +25,7 @@
 # def dao(a, b):
 
 # print(a[i], end =" ")
+a ="abc"
+l = []
+l[:0] = a
+print(l)
