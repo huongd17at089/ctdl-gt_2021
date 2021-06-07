@@ -4,8 +4,8 @@
 def nhap():
     return int(input())
 
-def xuat(a):
-    print("".join(str(i) for i in a), end =" ")
+# def xuat(a):
+#     print("".join(str(i) for i in a), end =" ")
 
 def dao(a,b):
     return b, a
@@ -34,15 +34,18 @@ def sinh(a):
 def xu_ly(n):
     xau = [i for i in range(1,n+1)]
     dung = False
+    kq = ""
     while( not dung):
-        xuat(xau)
+        # xuat(xau)
+        kq = kq + "".join(str(i) for i in xau )+ " "
         dung = sinh(xau)
-
+    return kq
 
 if __name__ == "__main__":
     t = int(input())
     kq = ""
     while(t > 0):
         n = nhap()
-        xu_ly(n)
+        kq = xu_ly(n)
+        print(kq)
         t -= 1

@@ -1,11 +1,11 @@
-# DSA01008 nhị phân k bít 1
+# DSA01015
 
 def nhap():
     a = input().split()
     return int(a[0]), int(a[1])
 
 def xuat(a):
-    print("".join(str(elem) for elem in a))
+    print("".join(str(elem*9) for elem in a), end=" ")
 
 def sinh(a):
     n = len(a) -1

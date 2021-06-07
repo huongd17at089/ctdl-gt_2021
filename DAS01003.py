@@ -41,4 +41,5 @@ if __name__ == "__main__":
         for i in hoan_vi:
             kq = kq + str(i) + " "
         print(kq)
+        kq = ""
         t -= 1

@@ -1,8 +1,8 @@
-# sinh tổ hợp
+# tap k tong s
 
 def nhap():
     s = input().split()
-    return int(s[0]), int(s[1])
+    return int(s[0]), int(s[1]), int(s[2])
 
 # def xuat(a):
 #     print("".join(str(a[i]) for i in  range(1, len(a))), end=" ")
@@ -18,20 +18,24 @@ def sinh(n, k, a):
         a[i] = a[i-1] + 1
     return False
 
-def xu_ly(n, k):
-    kq = ""
+def xu_ly(n, k, s):
+    dem = 0
     xau = [i for i in range(0, k+1)]
     dung = False
     while( not dung):
         # xuat(xau)
-        kq = kq + "".join(str(xau[i]) for i in  range(1, len(xau))) + " "
+        if(sum(xau) == s):
+            dem += 1
+        # kq = kq + "".join(str(xau[i]) for i in  range(1, len(xau))) + " "
         dung = sinh(n, k, xau)
-    return kq
+    return dem
 if __name__ == "__main__":
-    t = int(input())
-    kq = ""
-    while(t > 0):
-        n, k = nhap()
-        kq = xu_ly(n , k)
-        print(kq)
-        t -= 1
+    # t = int(input())
+    # kq = ""
+    s = input().split()
+    while(s):
+        n, k , s = nhap()
+        if( n == 0 and s == 0 and k == 0):
+            break;
+        print(xu_ly(n , k, s))
+        # t -= 1

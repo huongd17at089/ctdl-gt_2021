@@ -22,8 +22,10 @@ def xu_ly(n, k, a):
 
 
 def xuat(a):
+    kq = ""
     for i in a:
-        print(i, end =" ")
+        kq = kq + str(i) + " "
+    print(kq)
 
 
 if __name__ == "__main__":

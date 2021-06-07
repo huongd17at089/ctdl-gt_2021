@@ -20,7 +20,7 @@ def xu_ly(a):
         return "BIGGEST"
     k = n
     # ak là số nhỏ nhất còn lớn hơn aj
-    while a[k] < a[j]:
+    while a[k] <= a[j]:
         k -= 1
     # Đổi chỗ aj cho ak
     a[j], a[k] = dao(a[j], a[k])
